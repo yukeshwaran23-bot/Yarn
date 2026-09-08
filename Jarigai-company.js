@@ -1044,7 +1044,7 @@ backBtn.addEventListener(
     function() {
 
         window.location.href =
-            "Yarn-systeam.html";
+            "index.html";
 
     }
 );
