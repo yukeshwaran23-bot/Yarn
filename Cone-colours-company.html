@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cone Colour Companies</title>
+
+    <link
+        rel="stylesheet"
+        href="Cone-colours-company.css"
+    >
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <button
+            id="backBtn"
+            class="back-btn"
+            type="button"
+        >
+            ‹
+        </button>
+
+
+        <div class="top-info">
+
+            <h1>Cone Colours</h1>
+
+            <p>Yarn Colours</p>
+
+        </div>
+
+
+        <button
+            id="addBtn"
+            class="add-btn"
+            type="button"
+        >
+            +
+        </button>
+
+    </header>
+
+
+    <!-- PAGE -->
+
+    <main class="page">
+
+        <h2>Cone Colour Companies</h2>
+
+        <p class="subtitle">
+            View and manage colour companies
+        </p>
+
+
+        <!-- COMPANY LIST -->
+
+        <div id="companyList"></div>
+
+
+        <div
+            id="emptyMessage"
+            class="empty-message"
+        >
+            No colour companies added yet.
+        </div>
+
+    </main>
+
+
+    <!-- ADD / EDIT POPUP -->
+
+    <div
+        id="popupOverlay"
+        class="popup-overlay"
+    >
+
+        <div class="popup">
+
+            <div class="popup-header">
+
+                <h2 id="popupTitle">
+                    Add Colour Company
+                </h2>
+
+                <button
+                    id="closePopup"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <label>
+                Colour Company Name
+            </label>
+
+
+            <input
+                id="companyName"
+                type="text"
+                placeholder="Enter colour company name"
+                autocomplete="off"
+            >
+
+
+            <p
+                id="errorMessage"
+                class="error-message"
+            ></p>
+
+
+            <div class="popup-buttons">
+
+                <button
+                    id="cancelBtn"
+                    class="cancel-btn"
+                    type="button"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    id="saveBtn"
+                    class="save-btn"
+                    type="button"
+                >
+                    Save
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="Cone-colours-company.js"></script>
+
+</body>
+
+</html>

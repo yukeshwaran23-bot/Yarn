@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jarigai Company</title>
+
+    <link
+        rel="stylesheet"
+        href="Jarigai-company.css"
+    >
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <button
+            id="backBtn"
+            class="back-btn"
+        >
+            ‹
+        </button>
+
+
+        <div class="top-info">
+
+            <h1>Jarigai Company</h1>
+
+            <p>Jarigai Cones</p>
+
+        </div>
+
+
+        <button
+            id="addBtn"
+            class="add-btn"
+        >
+            +
+        </button>
+
+    </header>
+
+
+    <!-- PAGE -->
+
+    <main class="page">
+
+        <h2>Jarigai Companies</h2>
+
+        <p class="subtitle">
+            View and manage jarigai companies
+        </p>
+
+
+        <!-- COMPANY LIST -->
+
+        <div id="companyList"></div>
+
+
+        <div
+            id="emptyMessage"
+            class="empty-message"
+        >
+            No jarigai companies added yet.
+        </div>
+
+    </main>
+
+
+    <!-- ADD POPUP -->
+
+    <div
+        id="popupOverlay"
+        class="popup-overlay"
+    >
+
+        <div class="popup">
+
+            <div class="popup-header">
+
+                <h2 id="popupTitle">
+                    Add Jarigai Company
+                </h2>
+
+                <button id="closePopup">
+                    ×
+                </button>
+
+            </div>
+
+
+            <label>
+                Jarigai Company Name
+            </label>
+
+
+            <input
+                id="companyName"
+                type="text"
+                placeholder="Enter jarigai company name"
+                autocomplete="off"
+            >
+
+
+            <p
+                id="errorMessage"
+                class="error-message"
+            ></p>
+
+
+            <div class="popup-buttons">
+
+                <button
+                    id="cancelBtn"
+                    class="cancel-btn"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    id="saveBtn"
+                    class="save-btn"
+                >
+                    Save
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="Jarigai-company.js"></script>
+
+</body>
+
+</html>

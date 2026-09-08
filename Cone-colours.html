@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cone Colours</title>
+
+    <link
+        rel="stylesheet"
+        href="Cone-colours.css"
+    >
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <button
+            id="backBtn"
+            class="back-btn"
+            type="button"
+        >
+            ‹
+        </button>
+
+
+        <div class="top-info">
+
+            <h1 id="companyName">
+                Radhika Company
+            </h1>
+
+            <p>
+                Yarn Colours
+            </p>
+
+        </div>
+
+
+        <button
+            id="addBtn"
+            class="add-btn"
+            type="button"
+        >
+            +
+        </button>
+
+    </header>
+
+
+    <!-- PAGE -->
+
+    <main class="page">
+
+        <h2>Colours</h2>
+
+        <p class="subtitle" id="pageSubtitle">
+            View and manage colours
+        </p>
+
+
+        <!-- COLOUR LIST -->
+
+        <div id="colourList"></div>
+
+
+        <div
+            id="emptyMessage"
+            class="empty-message"
+        >
+            No colours added yet.
+        </div>
+
+    </main>
+
+
+    <!-- ADD / EDIT POPUP -->
+
+    <div
+        id="popupOverlay"
+        class="popup-overlay"
+    >
+
+        <div class="popup">
+
+            <div class="popup-header">
+
+                <h2 id="popupTitle">
+                    Add Colour
+                </h2>
+
+
+                <button
+                    id="closePopup"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- COLOUR NAME -->
+
+            <label for="colourName">
+                Colour Name:
+            </label>
+
+            <input
+                id="colourName"
+                type="text"
+                placeholder="Enter colour name"
+                autocomplete="off"
+            >
+
+
+            <!-- SHADE NUMBER -->
+
+            <label for="shadeNo">
+                Shade No:
+            </label>
+
+            <input
+                id="shadeNo"
+                type="text"
+                placeholder="Enter shade number"
+                autocomplete="off"
+            >
+
+
+            <p
+                id="errorMessage"
+                class="error-message"
+            ></p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="popup-buttons">
+
+                <button
+                    id="cancelBtn"
+                    class="cancel-btn"
+                    type="button"
+                >
+                    Cancel
+                </button>
+
+
+                <button
+                    id="saveBtn"
+                    class="save-btn"
+                    type="button"
+                >
+                    Save
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="Cone-colours.js"></script>
+
+</body>
+
+</html>

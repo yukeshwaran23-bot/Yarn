@@ -1,0 +1,693 @@
+/* =========================================
+   JARIGAI STOCK
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #faf8fb;
+
+    color: #211039;
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+    background: #4b1768;
+
+    color: white;
+
+    padding: 18px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    border-radius: 0 0 28px 28px;
+}
+
+
+.back-btn {
+    width: 52px;
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.14);
+
+    color: white;
+
+    font-size: 38px;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    transition: transform 0.12s ease;
+}
+
+
+.back-btn:active {
+    transform: scale(0.90);
+}
+
+
+.top-info {
+    flex: 1;
+}
+
+
+.top-info h1 {
+    font-size: 20px;
+
+    line-height: 1.2;
+}
+
+
+.top-info p {
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   ADD
+========================================= */
+
+.add-btn {
+    width: 58px;
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #4b1768;
+
+    font-size: 36px;
+
+    cursor: pointer;
+
+    transition: transform 0.12s ease;
+}
+
+
+.add-btn:active {
+    transform: scale(0.88);
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.total-section {
+    margin: 16px;
+
+    padding: 14px;
+
+    border-radius: 15px;
+
+    background: #eee1f7;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+.total-section div {
+    flex: 1;
+
+    text-align: center;
+}
+
+
+.total-section span {
+    display: block;
+
+    color: #77717e;
+
+    font-size: 11px;
+}
+
+
+.total-section strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #4b1768;
+
+    font-size: 17px;
+}
+
+
+.buy-total {
+    color: #2371c8 !important;
+}
+
+
+.return-total {
+    color: #d43d49 !important;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+    margin: 0 16px 15px;
+
+    height: 46px;
+
+    background: white;
+
+    border: 1px solid #ddd5e2;
+
+    border-radius: 23px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    gap: 8px;
+}
+
+
+.search-box span {
+    font-size: 24px;
+
+    color: #4b1768;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    padding: 0 16px 30px;
+}
+
+
+#transactionList {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   TRANSACTION CARD
+========================================= */
+
+.transaction-card {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 13px;
+
+    border: 1px solid;
+
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.12s ease;
+}
+
+
+.transaction-card:active {
+    transform: scale(0.97);
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.10);
+}
+
+
+.buy-card {
+    border-color: #c7ddf7;
+
+    background: #f9fcff;
+}
+
+
+.return-card {
+    border-color: #f5c9ce;
+
+    background: #fffafa;
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.type-icon {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+
+.buy-icon {
+    background: #dcecff;
+
+    color: #2674c8;
+}
+
+
+.return-icon {
+    background: #ffe0e4;
+
+    color: #d43d49;
+}
+
+
+.card-title {
+    flex: 1;
+}
+
+
+.card-title h3 {
+    font-size: 16px;
+}
+
+
+.card-title p {
+    margin-top: 3px;
+
+    color: #88818e;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   EDIT
+========================================= */
+
+.edit-btn {
+    border: none;
+
+    background: #eee1f7;
+
+    color: #4b1768;
+
+    padding: 8px 10px;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+.edit-btn:active {
+    transform: scale(0.90);
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.details {
+    margin-top: 10px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+
+.detail {
+    padding: 6px 9px;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.buy-card .detail {
+    background: #edf5ff;
+
+    color: #1d5da5;
+}
+
+
+.return-card .detail {
+    background: #fff0f2;
+
+    color: #b42a35;
+}
+
+
+/* =========================================
+   WEIGHT
+========================================= */
+
+.card-weight {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #625b68;
+}
+
+
+.card-weight strong {
+    color: #211039;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.empty-message {
+    text-align: center;
+
+    color: #888;
+
+    padding: 40px 10px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   POPUP
+========================================= */
+
+.popup-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.55);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 18px;
+
+    z-index: 1000;
+}
+
+
+.popup-overlay.active {
+    display: flex;
+}
+
+
+.popup {
+    width: 100%;
+
+    max-width: 360px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 18px;
+}
+
+
+/* =========================================
+   POPUP HEADER
+========================================= */
+
+.popup-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 17px;
+}
+
+
+.popup-header h2 {
+    font-size: 19px;
+}
+
+
+.popup-header button {
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #eee8f1;
+
+    color: #4b1768;
+
+    font-size: 22px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.popup label {
+    display: block;
+
+    margin: 12px 0 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.optional {
+    color: #888;
+
+    font-weight: normal;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   TYPE
+========================================= */
+
+.type-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.type-btn {
+    flex: 1;
+
+    height: 43px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border: 1px solid;
+
+    cursor: pointer;
+}
+
+
+.buy-btn {
+    background: #edf5ff;
+
+    border-color: #bcd9ff;
+
+    color: #2674c8;
+}
+
+
+.buy-btn.active {
+    background: #4387d9;
+
+    color: white;
+}
+
+
+.return-btn {
+    background: #fff0f2;
+
+    border-color: #f5c5cb;
+
+    color: #d43d49;
+}
+
+
+.return-btn.active {
+    background: #df5863;
+
+    color: white;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.popup input {
+    width: 100%;
+
+    height: 44px;
+
+    border: 1px solid #d9d1df;
+
+    border-radius: 10px;
+
+    padding: 0 12px;
+
+    outline: none;
+
+    font-size: 13px;
+
+    color: #211039;
+}
+
+
+.popup input:focus {
+    border-color: #4b1768;
+}
+
+
+/* =========================================
+   WEIGHT
+========================================= */
+
+.weight-field {
+    position: relative;
+}
+
+
+.weight-field input {
+    padding-right: 45px;
+}
+
+
+.weight-field span {
+    position: absolute;
+
+    right: 13px;
+
+    top: 14px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SAVE
+========================================= */
+
+.save-btn {
+    width: 100%;
+
+    height: 45px;
+
+    margin-top: 18px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #4b1768;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.save-btn:active {
+    transform: scale(0.97);
+}
